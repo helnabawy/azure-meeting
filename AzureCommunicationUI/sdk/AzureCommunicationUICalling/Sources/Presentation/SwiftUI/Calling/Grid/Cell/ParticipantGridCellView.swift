@@ -97,6 +97,13 @@ struct ParticipantGridCellView: View {
                                  titleFont: Fonts.caption1.font,
                                  mutedIconSize: 16)
                 .opacity(viewModel.isHold ? 0.6 : 1)
+            Spacer().frame(height: 15)
+            Text("المدعي")
+                .font(Font.custom("Almarai-Regular", size: 14))
+                .padding(8)
+                .background(Color(hex: 0x1669C780))
+                .cornerRadius(25)
+            Spacer().frame(height: 20)
             if viewModel.isHold {
                 Text(viewModel.getOnHoldString())
                     .font(Fonts.caption1.font)

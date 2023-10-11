@@ -143,6 +143,7 @@ struct SetupTitleView: View {
                     .accessibilityIdentifier(AccessibilityIdentifier.dismissButtonAccessibilityID.rawValue)
 
                 Text(viewModel.title)
+                    
                     .font(Fonts.footnote.font)
                     .foregroundColor(Color(StyleProvider.color.onBackground))
                     .lineLimit(1)
